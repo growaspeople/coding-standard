@@ -15,15 +15,5 @@
 	"undef" : true,
 	"unused" : true,
 
-	"eqnull" : true,
-
-	"node" : true,
-	"globals": {
-		"console": true,
-		"exports": true,
-		"geddy": true,
-		"require": true,
-		"Sequelize": true,
-		"sequelize": true
-	}
+	"eqnull" : true
 }
