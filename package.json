@@ -1,7 +1,7 @@
 {
-	"name": "growaspeople-coding-standards",
+	"name": "coding-standards",
 	"version": "0.0.1",
-	"description": "Coding Styles and Lint files used in GrowAsPeople projects",
+	"description": "Coding Style Guidelines and Lint files used in GrowAsPeople projects",
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:growaspeople/coding-standards.git"
@@ -10,7 +10,7 @@
 		"name" : "Jumpei Ogawa",
 		"email" : "ogawa@growaspeople.org"
 	},
-	"license": "MIT",
+	"license": "CC0-1.0",
 	"bugs": {
 		"url": "https://github.com/growaspeople/coding-standards/issues"
 	},
