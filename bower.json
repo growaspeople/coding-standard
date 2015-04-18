@@ -1,0 +1,10 @@
+{
+	"name": "coding-standards",
+	"version": "0.0.1",
+	"homepage": "http://growaspeople.org",
+	"authors": [
+		"Jumpei Ogawa <ogawa@growaspeople.org>"
+	],
+	"description": "Coding Style Guidelines and Lint files used in GrowAsPeople projects",
+	"license": "CC0-1.0"
+}
