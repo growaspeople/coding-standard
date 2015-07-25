@@ -77,7 +77,7 @@
 		"constructor-super": 2,
 		"generator-star-spacing": [ 2, { "before": false, "after": true }],
 		"no-this-before-super": 2,
-		"object-shorthand": [2, "always"],
+		"object-shorthand": [2, "never"],
 		"prefer-const": 2,
 
 		"no-bitwise": 2,
