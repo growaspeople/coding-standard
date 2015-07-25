@@ -47,7 +47,8 @@
 		"indent": [2, "tab", { "indentSwitchCase": true }],
 		"key-spacing": [1, {
 			"beforeColon": false,
-			"afterColon": true
+			"afterColon": true,
+			"align": "value"
 		}],
 		"linebreak-style": [2, "unix"],
 		"new-cap": 1,
