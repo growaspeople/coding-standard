@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "0.12"
+  - "0.10"
+  - "iojs"
+
+sudo: false
+
+script:
+  - ./node_modules/.bin/eslint --config ./javascript/browser.eslintrc.json ./javascript/test.js
+  - ./node_modules/.bin/eslint --config ./javascript/nodejs.eslintrc.json ./javascript/test.js

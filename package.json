@@ -15,6 +15,9 @@
 		"url": "https://github.com/growaspeople/coding-standards/issues"
 	},
 	"homepage": "https://github.com/growaspeople/coding-standards",
+	"devDependencies": {
+		"eslint": "latest"
+	},
 	"engines": {
 		"node": ">=0.10.x"
 	}
