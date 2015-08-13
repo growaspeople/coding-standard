@@ -65,6 +65,7 @@
 			"objectsInObjects": false,
 			"arraysInObjects": false
 		}],
+		"one-var": [ 2, "always" ],
 		"operator-linebreak": [ 1, "before" ],
 		"padded-blocks": [ 1, "never" ],
 		"quote-props": [ 2, "as-needed" ],
