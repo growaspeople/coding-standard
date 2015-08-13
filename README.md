@@ -1,6 +1,8 @@
 GrowAsPeople Coding Style Standards
 ====================================
 
+[![Build Status](https://travis-ci.org/growaspeople/coding-standards.svg?branch=master)](https://travis-ci.org/growaspeople/coding-standards)
+
 This repository includes coding style standard documents and configuration files used in GrowAsPeople projects.
 
 When you want to add rules, try not to add it into documents but  configuration files as possible.
