@@ -19,6 +19,6 @@
 		"eslint": "latest"
 	},
 	"engines": {
-		"node": ">=0.10.x"
+		"node": ">=4.x"
 	}
 }
