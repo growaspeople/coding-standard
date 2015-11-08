@@ -6,13 +6,13 @@ Usage
 ### 1. Install this repo via npm or bower
 
 ```shell
-npm install growaspeople/coding-standards
+npm install --save growaspeople/coding-standards
 ```
 
 If you don't use npm in the project, you can also choose bower.
 
 ```shell
-bower install growaspeople/coding-standards
+bower install --save growaspeople/coding-standards
 ```
 
 ### 2. Create .eslintrc on your local project
