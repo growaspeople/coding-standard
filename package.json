@@ -15,10 +15,16 @@
 		"url": "https://github.com/growaspeople/coding-standards/issues"
 	},
 	"homepage": "https://github.com/growaspeople/coding-standards",
+	"dependencies": {
+		"eslint-to-editorconfig": "latest"
+	},
 	"devDependencies": {
 		"eslint": "latest"
 	},
 	"engines": {
 		"node": ">=4.x"
+	},
+	"scripts": {
+		"postinstall": "./init.sh"
 	}
 }
