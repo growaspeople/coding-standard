@@ -84,6 +84,7 @@
 		"prefer-const": 2,
 
 		"no-bitwise": 2,
+		"semi": [2, "always"],
 
 		"camelcase": 0
 	}
