@@ -1,41 +1,6 @@
 GrowAsPeople JavaScript Coding Style Standard
 ==============================================
 
-Usage
-------
-### 1. Install this repo via npm or bower
-
-```shell
-npm install --save growaspeople/coding-standards
-```
-
-If you don't use npm in the project, you can also choose bower.
-
-```shell
-bower install --save growaspeople/coding-standards
-```
-
-### 2. Create .eslintrc on your local project
-
-```shell
-cd PROJECT_ROOT
-echo '{ "extends": "./node_modules/coding-standards/javascript/nodejs.eslintrc.json" }' > .eslintrc
-```
-
-Then your .eslintrc loads Node.js coding rule.
-If you use this coding standard in code for browser frontend, replace `nodejs.eslintrc.json` to `browser.eslintrc.json`.
-
-### 3. Use it
-
-You can test all .js files in your project by:
-
-``` shell
-cd PROJECT_ROOT
-eslint .
-```
-
-You can also use plugins for editors, including [Brackets](https://github.com/zaggino/brackets-eslint), [Atom](https://atom.io/packages/linter-eslint)
-
 Principle
 ------------
 Follow ESLint rules.
