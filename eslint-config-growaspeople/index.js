@@ -71,11 +71,10 @@ module.exports = {
     "padded-blocks": [ "warn", "never" ],
     "quote-props": [ "error", "as-needed" ],
     quotes: [ "warn", "double" ],
-    "space-after-keywords": [ "warn", "always" ],
+    "keyword-spacing": [ "warn", { before: true, after: true } ],
     "space-before-blocks": [ "warn", "always" ],
     "space-before-function-paren": [ "warn", "never" ],
     "space-in-parens": [ "warn", "never" ],
-    "space-return-throw-case": "error",
     "spaced-comment": [ "warn", "always" ],
     "wrap-regex": "error",
 
