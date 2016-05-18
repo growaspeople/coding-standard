@@ -2,6 +2,7 @@
   "name": "eslint-config-growaspeople",
   "version": "0.0.1",
   "description": "ESLint configuration for GrowAsPeople projects",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:growaspeople/coding-standards.git"
