@@ -17,7 +17,7 @@ module.exports = {
     //
 
     // Possible Errors
-    "comma-dangle":            "error",
+    "comma-dangle":            ["error", "only-multiline"],
     "no-cond-assign":          ["error", "always"],
     "no-debugger":             "error",
     "no-extra-semi":           "error",
