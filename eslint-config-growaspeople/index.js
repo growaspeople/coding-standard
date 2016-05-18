@@ -17,23 +17,23 @@ module.exports = {
     //
 
     // Possible Errors
-    "comma-dangle":            "warn",
+    "comma-dangle":            "error",
     "no-cond-assign":          ["error", "always"],
-    "no-debugger":             "warn",
-    "no-extra-semi":           "warn",
+    "no-debugger":             "error",
+    "no-extra-semi":           "error",
     "no-func-assign":          "error",
     "no-unexpected-multiline": "error",
     "valid-jsdoc":             "error",
 
     // Best Practices
     "block-scoped-var": "error",
-    curly:              "warn",
+    curly:              "error", // We might have to consider relaxed option
     "guard-for-in":     "error",
     "no-div-regex":     "error",
     "no-eq-null":       "error",
     "no-self-compare":  "error",
     "wrap-iife":        "error",
-    yoda:               ["warn", "never"],
+    yoda:               ["error", "never"],
 
     // Strict Mode
     strict: ["error", "safe"],
@@ -47,7 +47,9 @@ module.exports = {
     // When you add rule in this section, write reason why you add here.
     //
     "no-console":          "warn",
-    "default-case":        "off",
+    // Not so strong reason to force every members to add default section,
+    // but it might prevent bugs to be notified when no defauld section.
+    "default-case":        "warn",
     // I'm not sure if alert, confirm, and prompt are banned. We need discussion
     "no-alert":            "warn",
     // It shouldn't so strictly benned, although it is not preferrable
