@@ -36,7 +36,7 @@ module.exports = {
     yoda:               ["warn", "never"],
 
     // Strict Mode
-    strict: ["error", "global"],
+    strict: ["error", "safe"],
 
     // variables
     "no-undefined": "error",
