@@ -23,17 +23,27 @@ module.exports = {
     "no-extra-semi":           "error",
     "no-func-assign":          "error",
     "no-unexpected-multiline": "error",
+    "no-unsafe-finally":       "error",
     "valid-jsdoc":             "error",
 
     // Best Practices
-    "block-scoped-var": "error",
-    curly:              "error", // We might have to consider relaxed option
-    "guard-for-in":     "error",
-    "no-div-regex":     "error",
-    "no-eq-null":       "error",
-    "no-self-compare":  "error",
-    "wrap-iife":        "error",
-    yoda:               ["error", "never"],
+    "accessor-pairs":        "error",
+    "array-callback-return": "error",
+    "block-scoped-var":      "error",
+    "consistent-return":     "error",
+    curly:                   "error", // We might have to consider relaxed option
+    eqeqeq:                  "error", // shoudn't use "smart" or "allow-null" because no-eq-null is enabled
+    "guard-for-in":          "error",
+    "no-caller":             "error",
+    "no-div-regex":          "error",
+    "no-empty-function":     "error", // relaxed config might have to be considered
+    "no-eq-null":            "error",
+    "no-eval":               "error",
+    "no-extend-native":      "error",
+    "no-extra-bind":         "error",
+    "no-self-compare":       "error",
+    "wrap-iife":             "error",
+    yoda:                    ["error", "never"],
 
     // Strict Mode
     strict: ["error", "safe"],
@@ -46,12 +56,27 @@ module.exports = {
     // These rules also affect product quality when violated, but by some reason, they are not configured "error" but "warn".
     // When you add rule in this section, write reason why you add here.
     //
-    "no-console":          "warn",
+
+    // Possible Errors
+
+    // Console is sometimes required, even in production
+    "no-console": "warn",
+
+    // Need consideration if there is no problem when it is configured as "error"
+    "no-extra-parens": "warn",
+
+    // Best Practices
+
+    // I'm not sure 4 is best max limit of cyclomatic complexity. Need consideration. (Jumpei Ogawa)
+    complexity: ["warn", 4],
+
     // Not so strong reason to force every members to add default section,
     // but it might prevent bugs to be notified when no defauld section.
-    "default-case":        "warn",
+    "default-case": "warn",
+
     // I'm not sure if alert, confirm, and prompt are banned. We need discussion
-    "no-alert":            "warn",
+    "no-alert": "warn",
+
     // It shouldn't so strictly benned, although it is not preferrable
     "no-warning-comments": "warn",
 
@@ -62,6 +87,11 @@ module.exports = {
 
     // Possible Errors
     "no-ex-assign": "off",
+
+    // Best Practices
+    "dot-location":   "off",
+    "no-else-return": "off", // relse-return is readable in some cases
+    "no-extra-label": "off", // sometimes improve readability
 
     // Variables
     "no-catch-shadow": "off", // This is for bug in IE8 or earlier. Not required.
