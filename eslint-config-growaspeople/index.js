@@ -1,11 +1,11 @@
 "use strict";
 
 module.exports = {
-  "extends": "eslint:recommended",
-  "env": {
-    "es6": true
+  extends: "eslint:recommended",
+  env: {
+    es6: true
   },
-  "rules": {
+  rules: {
     "comma-dangle": 1,
     "no-cond-assign": [2, "always"],
     "no-console": 1,
@@ -18,7 +18,7 @@ module.exports = {
     "no-unexpected-multiline": 2,
 
     "block-scoped-var": 2,
-    "curly" : 1,
+    curly : 1,
     "default-case": 0,
     "dot-notation": 1,
     "guard-for-in": 2,
@@ -29,9 +29,9 @@ module.exports = {
     "no-self-compare": 2,
     "no-warning-comments": 1,
     "wrap-iife": 2,
-    "yoda": [1, "never"],
+    yoda: [1, "never"],
 
-    "strict": [2, "global"],
+    strict: [2, "global"],
 
     "no-catch-shadow": 0,
     "no-undefined": 2,
@@ -41,36 +41,36 @@ module.exports = {
     "no-new-require": 2,
 
     "array-bracket-spacing": 1,
-    "comma-spacing": [1, { "before": false, "after": true }],
+    "comma-spacing": [1, { before: false, after: true }],
     "computed-property-spacing": [1, "never"],
     "consistent-this": [2, "self"],
     "eol-last": 1,
     "func-style": [1, "expression"],
-    "indent": [2, 2, { "SwitchCase": 1, "VariableDeclarator": { "var": 2, "let": 2, "const": 3 }}],
+    indent: [2, 2, { SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 }}],
     "key-spacing": [1, {
-      "beforeColon": false,
-      "afterColon": true,
-      "align": "value"
+      beforeColon: false,
+      afterColon: true,
+      align: "value"
     }],
     "linebreak-style": [2, "unix"],
     "new-cap": 1,
     "new-parens": 1,
     "newline-after-var": 1,
     "no-lonely-if": 2,
-    "no-multiple-empty-lines": [ 2, { "max": 1 } ],
+    "no-multiple-empty-lines": [ 2, { max: 1 } ],
     "no-nested-ternary": 2,
     "no-spaced-func": 1,
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 2,
     "object-curly-spacing": [ 1, "always", {
-      "objectsInObjects": false,
-      "arraysInObjects": false
+      objectsInObjects: false,
+      arraysInObjects: false
     }],
     "one-var": [ 2, "always" ],
     "operator-linebreak": [ 1, "before" ],
     "padded-blocks": [ 1, "never" ],
     "quote-props": [ 2, "as-needed" ],
-    "quotes": [ 1, "double" ],
+    quotes: [ 1, "double" ],
     "space-after-keywords": [ 1, "always" ],
     "space-before-blocks": [ 1, "always" ],
     "space-before-function-paren": [ 1, "never" ],
@@ -80,14 +80,14 @@ module.exports = {
     "wrap-regex": 2,
 
     "constructor-super": 2,
-    "generator-star-spacing": [ 2, { "before": false, "after": true }],
+    "generator-star-spacing": [ 2, { before: false, after: true }],
     "no-this-before-super": 2,
     "object-shorthand": [2, "never"],
     "prefer-const": 2,
 
     "no-bitwise": 2,
-    "semi": [2, "always"],
+    semi: [2, "always"],
 
-    "camelcase": 0
+    camelcase: 0
   }
 };
