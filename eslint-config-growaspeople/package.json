@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-growaspeople",
+  "version": "0.0.1",
+  "description": "ESLint configuration for GrowAsPeople projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:growaspeople/coding-standards.git"
+  },
+  "author": {
+    "name" : "Jumpei Ogawa",
+    "email" : "ogawa@growaspeople.org"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "GrowAsPeople"
+  ],
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/growaspeople/coding-standards/issues"
+  },
+  "homepage": "https://github.com/growaspeople/coding-standards",
+  "engines": {
+    "node": ">=4.x"
+  }
+}

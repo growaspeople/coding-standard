@@ -46,7 +46,7 @@ Follow ESLint rules.
 Database
 --------
 - You must not write raw SQL query but ORM functions, except when ORM function reduce performance issue.
-	- Contribution to the ORM library is very welcome.
+  - Contribution to the ORM library is very welcome.
 
 Libraries
 ---------
