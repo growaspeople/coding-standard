@@ -1,4 +1,6 @@
-{
+"use strict";
+
+modules.exports = {
   "extends": "./common.eslintrc.json",
 
   "env": {
@@ -8,4 +10,4 @@
   "globals": {
     "fetch": true
   }
-}
+};

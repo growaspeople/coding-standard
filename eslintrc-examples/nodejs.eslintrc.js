@@ -1,4 +1,6 @@
-{
+"use strict";
+
+modules.export = {
   "extends": "./common.eslintrc.json",
 
   "env": {
@@ -16,4 +18,4 @@
       ]
     }]
   }
-}
+};
