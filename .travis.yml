@@ -6,5 +6,4 @@ node_js:
 sudo: false
 
 script:
-  - ./node_modules/.bin/eslint --config ./javascript/browser.eslintrc.json ./javascript/test.js
-  - ./node_modules/.bin/eslint --config ./javascript/nodejs.eslintrc.json ./javascript/test.js
+  - ./node_modules/.bin/eslint .
