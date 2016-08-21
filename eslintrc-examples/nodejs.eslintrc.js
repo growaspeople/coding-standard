@@ -1,18 +1,18 @@
 "use strict";
 
-modules.export = {
-  "extends": "./common.eslintrc.json",
+module.export = {
+  extends: "./common.eslintrc.json",
 
-  "env": {
-    "node": true,
-    "mocha": true
+  env: {
+    node:  true,
+    mocha: true
   },
-  "globals": {
-    "fetch": true
+  globals: {
+    fetch: true
   },
-  "rules": {
+  rules: {
     "new-cap": [1, {
-      "capIsNewExceptions": [
+      capIsNewExceptions: [
         "STRING",
         "INTEGER"
       ]

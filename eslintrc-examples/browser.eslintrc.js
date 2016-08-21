@@ -1,13 +1,13 @@
 "use strict";
 
-modules.exports = {
-  "extends": "./common.eslintrc.json",
+module.exports = {
+  extends: "./common.eslintrc.json",
 
-  "env": {
-    "browser": true,
-    "jquery": true
+  env: {
+    browser: true,
+    jquery:  true
   },
-  "globals": {
-    "fetch": true
+  globals: {
+    fetch: true
   }
 };
