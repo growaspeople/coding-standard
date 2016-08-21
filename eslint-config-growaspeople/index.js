@@ -51,6 +51,9 @@ module.exports = {
     // variables
     "no-undefined": "error",
 
+    // ECMAScript 6
+    "no-var": "error",
+
     //
     // etc.
     // These rules also affect product quality when violated, but by some reason, they are not configured "error" but "warn".
