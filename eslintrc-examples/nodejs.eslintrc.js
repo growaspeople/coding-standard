@@ -9,13 +9,5 @@ module.export = {
   },
   globals: {
     fetch: true
-  },
-  rules: {
-    "new-cap": [1, {
-      capIsNewExceptions: [
-        "STRING",
-        "INTEGER"
-      ]
-    }]
   }
 };
