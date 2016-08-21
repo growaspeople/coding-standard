@@ -6,6 +6,9 @@ module.exports = {
   env: {
     es6: true
   },
+  globals: {
+    fetch: true
+  },
 
   rules: {
     //

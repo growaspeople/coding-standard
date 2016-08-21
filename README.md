@@ -1,27 +1,19 @@
-GrowAsPeople Coding Style Standards
-====================================
+eslint-config-growaspeople
+==============================================
 
-[![Build Status](https://travis-ci.org/growaspeople/coding-standards.svg?branch=master)](https://travis-ci.org/growaspeople/coding-standards)
+ESLint config for GrowAsPeople projects.
 
-This repository includes coding style standard documents and configuration files used in GrowAsPeople projects.
+Install
+------
+1. Install from npm:
 
-See [JavaScript section](https://github.com/growaspeople/coding-standards/tree/master/javascript) for ESLint config usage
+```shell
+npm install --save-dev eslint-config-growaspeople
+```
 
-When you want to add rules, try not to add it into documents but configuration files as possible.
-Software engineers' primary common language is not English but programming languages. It is much easier to understand concretely rather than explaining in ambiguous natural language.
+2. Create .eslintrc.* file on your project root.
+You can copy from [eslintrc-examples](https://github.com/growaspeople/coding-standards/tree/master/eslintrc-examples) directory.
 
-General Rules
-==============
+3. (Optional) Add `cd $PROJECT_ROOT && eslint .` on CI test process.
 
-Internal Patches
-----------------
-As a principle, when you wrote patches for libraries used in our project, it should be contributed to the upstream.
-However, sometimes we have to make modification which should not be contributed.
-
-In such cases:
-
-1. Fork the repository to github.com/growaspeople
-2. Make `master` as same as latest release
-3. Commit changes you want to apply
-    - Add [GGP] at the first of the commit message
-4. When new version released, rebase `master`
+Editor plugins are available for some editors such as [Brackets](https://github.com/zaggino/brackets-eslint) and [Atom](https://atom.io/packages/linter-eslint)
