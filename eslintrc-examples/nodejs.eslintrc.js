@@ -6,8 +6,5 @@ module.export = {
   env: {
     node:  true,
     mocha: true
-  },
-  globals: {
-    fetch: true
   }
 };

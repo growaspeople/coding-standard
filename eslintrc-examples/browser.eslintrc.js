@@ -6,8 +6,5 @@ module.exports = {
   env: {
     browser: true,
     jquery:  true
-  },
-  globals: {
-    fetch: true
   }
 };
