@@ -33,7 +33,6 @@ module.exports = {
     "accessor-pairs":        "error",
     "array-callback-return": "error",
     "block-scoped-var":      "error",
-    "consistent-return":     "error",
     curly:                   "error", // We might have to consider relaxed option
     eqeqeq:                  "error", // shoudn't use "smart" or "allow-null" because no-eq-null is enabled
     "guard-for-in":          "error",
@@ -95,6 +94,7 @@ module.exports = {
     "no-ex-assign": "off",
 
     // Best Practices
+    "consistent-return": "off",
     "dot-location":   "off",
     "no-else-return": "off", // relse-return is readable in some cases
     "no-extra-label": "off", // sometimes improve readability
