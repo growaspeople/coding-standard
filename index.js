@@ -95,9 +95,9 @@ module.exports = {
 
     // Best Practices
     "consistent-return": "off",
-    "dot-location":   "off",
-    "no-else-return": "off", // relse-return is readable in some cases
-    "no-extra-label": "off", // sometimes improve readability
+    "dot-location":      "off",
+    "no-else-return":    "off", // relse-return is readable in some cases
+    "no-extra-label":    "off", // sometimes improve readability
 
     // Variables
     "no-catch-shadow": "off", // This is for bug in IE8 or earlier. Not required.
