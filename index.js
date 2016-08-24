@@ -70,11 +70,6 @@ module.exports = {
     // Need consideration if there is no problem when it is configured as "error"
     "no-extra-parens": "warn",
 
-    // Best Practices
-
-    // I'm not sure 4 is best max limit of cyclomatic complexity. Need consideration. (Jumpei Ogawa)
-    complexity: ["warn", 4],
-
     // Not so strong reason to force every members to add default section,
     // but it might prevent bugs to be notified when no defauld section.
     "default-case": "warn",
@@ -94,6 +89,7 @@ module.exports = {
     "no-ex-assign": "off",
 
     // Best Practices
+    complexity:          "off",
     "consistent-return": "off",
     "dot-location":      "off",
     "no-else-return":    "off", // relse-return is readable in some cases
