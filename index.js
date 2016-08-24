@@ -102,6 +102,9 @@ module.exports = {
     // Variables
     "no-catch-shadow": "off", // This is for bug in IE8 or earlier. Not required.
 
+    // Node.js and CommonJS
+    "no-mixed-requires": "off",
+
     //
     // Stylistic rules
     // Rules just about styles, such as spacing and line breaks. All rules should
@@ -134,7 +137,6 @@ module.exports = {
     // TODO Categolize into above 3 categories
     //
     "handle-callback-err": "error",
-    "no-mixed-requires":   "warn",
     "no-new-require":      "error",
 
     "array-bracket-spacing":       "warn",
