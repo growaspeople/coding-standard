@@ -33,7 +33,6 @@ module.exports = {
     "accessor-pairs":        "error",
     "array-callback-return": "error",
     "block-scoped-var":      "error",
-    "consistent-return":     "error",
     curly:                   "error", // We might have to consider relaxed option
     eqeqeq:                  "error", // shoudn't use "smart" or "allow-null" because no-eq-null is enabled
     "guard-for-in":          "error",
@@ -71,11 +70,6 @@ module.exports = {
     // Need consideration if there is no problem when it is configured as "error"
     "no-extra-parens": "warn",
 
-    // Best Practices
-
-    // I'm not sure 4 is best max limit of cyclomatic complexity. Need consideration. (Jumpei Ogawa)
-    complexity: ["warn", 4],
-
     // Not so strong reason to force every members to add default section,
     // but it might prevent bugs to be notified when no defauld section.
     "default-case": "warn",
@@ -95,12 +89,17 @@ module.exports = {
     "no-ex-assign": "off",
 
     // Best Practices
-    "dot-location":   "off",
-    "no-else-return": "off", // relse-return is readable in some cases
-    "no-extra-label": "off", // sometimes improve readability
+    complexity:          "off",
+    "consistent-return": "off",
+    "dot-location":      "off",
+    "no-else-return":    "off", // relse-return is readable in some cases
+    "no-extra-label":    "off", // sometimes improve readability
 
     // Variables
     "no-catch-shadow": "off", // This is for bug in IE8 or earlier. Not required.
+
+    // Node.js and CommonJS
+    "no-mixed-requires": "off",
 
     //
     // Stylistic rules
@@ -134,7 +133,6 @@ module.exports = {
     // TODO Categolize into above 3 categories
     //
     "handle-callback-err": "error",
-    "no-mixed-requires":   "warn",
     "no-new-require":      "error",
 
     "array-bracket-spacing":       "warn",
