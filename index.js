@@ -20,7 +20,7 @@ module.exports = {
     //
 
     // Possible Errors
-    "comma-dangle":            ["error", "only-multiline"],
+    "comma-dangle":            ["error", "never"],
     "no-cond-assign":          ["error", "always"],
     "no-debugger":             "error",
     "no-extra-semi":           "error",
