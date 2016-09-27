@@ -45,7 +45,6 @@ module.exports = {
     "no-extra-bind":         "error",
     "no-self-compare":       "error",
     "wrap-iife":             "error",
-    yoda:                    ["error", "never"],
 
     // Strict Mode
     strict: ["error", "safe"],
@@ -82,7 +81,7 @@ module.exports = {
 
     //
     // Disabled rules
-    // These rules are enabled by recommended settings, but disabled in GrowAsPeople.
+    // These rules are disabled in GrowAsPeople.
     //
 
     // Possible Errors
@@ -94,6 +93,7 @@ module.exports = {
     "dot-location":      "off",
     "no-else-return":    "off", // relse-return is readable in some cases
     "no-extra-label":    "off", // sometimes improve readability
+    yoda:                "off", // Shouldn't forbid yoda when checking if number is inside range e.g. (200 <= res.status && res.status < 300)
 
     // Variables
     "no-catch-shadow": "off", // This is for bug in IE8 or earlier. Not required.
