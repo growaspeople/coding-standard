@@ -21,6 +21,9 @@
     "url": "https://github.com/growaspeople/coding-standards/issues"
   },
   "homepage": "https://github.com/growaspeople/coding-standards",
+  "peerDependencies": {
+    "eslint": ">=3.x"
+  },
   "engines": {
     "node": ">=4.x"
   }
