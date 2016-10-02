@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:growaspeople/coding-standards.git"
+    "url": "git@github.com:growaspeople/eslint-config-growaspeople.git"
   },
   "author": {
     "name" : "Jumpei Ogawa",
@@ -18,9 +18,9 @@
   ],
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/growaspeople/coding-standards/issues"
+    "url": "https://github.com/growaspeople/eslint-config-growaspeople/issues"
   },
-  "homepage": "https://github.com/growaspeople/coding-standards",
+  "homepage": "https://github.com/growaspeople/eslint-config-growaspeople",
   "peerDependencies": {
     "eslint": ">=3.x"
   },
