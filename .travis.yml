@@ -2,11 +2,24 @@ language: node_js
 node_js:
   - "4"
   - "6"
-
-sudo: false
+env:
+  - CXX=g++-4.8 # Node.js v4 (or io.js v3) compiler requirements @see https://docs.travis-ci.com/user/languages/javascript-with-nodejs#Node.js-v4-(or-io.js-v3)-compiler-requirements
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+sudo: true
 
 install:
   - npm install --global eslint
 
 script:
   - eslint .
+
+deploy:
+  provider: npm
+  api_key: "NPM_AUTH_TOKEN"
+  on:
+    tags: true
