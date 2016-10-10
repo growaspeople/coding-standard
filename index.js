@@ -78,6 +78,12 @@ module.exports = {
 
     // It shouldn't so strictly benned, although it is not preferrable
     "no-warning-comments": "warn",
+    
+    // Stylistic Issues
+    
+    // There are some libraries which doesn't follow the rules of new-cap.
+    // You can add exception here, but it reduce productivity to add everytime.
+    "new-cap": ["warn", { "capIsNewExceptions": ["Polymer"] }],
 
     //
     // Disabled rules
@@ -143,7 +149,6 @@ module.exports = {
     "func-style":                  ["warn", "expression"],
     indent:                        ["error", 2, { SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 }}],
     "linebreak-style":             ["error", "unix"],
-    "new-cap":                     "warn",
     "new-parens":                  "warn",
     "newline-after-var":           "warn",
     "no-lonely-if":                "error",
