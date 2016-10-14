@@ -133,6 +133,7 @@ module.exports = {
       objectsInObjects: false,
       arraysInObjects:  false
     }],
+    "space-infix-ops": ["warn"],
 
     //
     // Uncategolized
