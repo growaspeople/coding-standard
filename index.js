@@ -54,6 +54,7 @@ module.exports = {
 
     // ECMAScript 6
     "no-var": "error",
+    "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
 
     //
     // etc.
@@ -174,7 +175,6 @@ module.exports = {
     "generator-star-spacing": ["error", { before: false, after: true }],
     "no-this-before-super":   "error",
     "object-shorthand":       ["error", "never"],
-    "prefer-const":           "error",
 
     "no-bitwise": "error",
     semi:         ["error", "always"],
