@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-growaspeople",
-  "version": "2016.10.2",
+  "version": "2016.12.27",
   "description": "ESLint configuration for GrowAsPeople projects",
   "main": "index.js",
   "repository": {
