@@ -9,7 +9,9 @@ module.exports = {
   globals: {
     fetch: true
   },
-
+  plugins: [
+    "promise"
+  ],
   rules: {
     //
     // Necessary rules
@@ -53,7 +55,16 @@ module.exports = {
     "no-undefined": "error",
 
     // ECMAScript 6
-    "no-var": "error",
+    "no-var":       "error",
+    "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
+
+    // Promise (eslint-plugin-promise)
+    "promise/always-return":          "error",
+    "promise/catch-or-return":        "error",
+    "promise/no-callback-in-promise": "warn", // Not understanding behavior of this rule well. Need review later.
+    "promise/no-promise-in-callback": "warn", // Not understanding behavior of this rule well. Need review later.
+    "promise/no-return-wrap":         "error", // Not understanding behavior of this rule well. Need review later.
+    "promise/param-names":            "error",
 
     //
     // etc.
@@ -79,6 +90,12 @@ module.exports = {
     // It shouldn't so strictly benned, although it is not preferrable
     "no-warning-comments": "warn",
 
+    // Stylistic Issues
+
+    // There are some libraries which doesn't follow the rules of new-cap.
+    // You can add exception here, but it reduce productivity to add everytime.
+    "new-cap": ["warn", { capIsNewExceptions: ["Polymer"]}],
+
     //
     // Disabled rules
     // These rules are disabled in GrowAsPeople.
@@ -100,6 +117,11 @@ module.exports = {
 
     // Node.js and CommonJS
     "no-mixed-requires": "off",
+
+    // Promise (eslint-plugin-promise)
+    "promise/avoid-new":  "off", // We don't force to use pify or similar libraries when you need to use legacy callback functions
+    "promise/no-native":  "off", // Promise is not always declared in the same file (e.g. core.js on frontend)
+    "promise/no-nesting": "off", // Sometimes nested promise is required
 
     //
     // Stylistic rules
@@ -127,6 +149,7 @@ module.exports = {
       objectsInObjects: false,
       arraysInObjects:  false
     }],
+    "space-infix-ops": ["warn"],
 
     //
     // Uncategolized
@@ -143,7 +166,6 @@ module.exports = {
     "func-style":                  ["warn", "expression"],
     indent:                        ["error", 2, { SwitchCase: 1, VariableDeclarator: { var: 2, let: 2, const: 3 }}],
     "linebreak-style":             ["error", "unix"],
-    "new-cap":                     "warn",
     "new-parens":                  "warn",
     "newline-after-var":           "warn",
     "no-lonely-if":                "error",
@@ -168,7 +190,6 @@ module.exports = {
     "generator-star-spacing": ["error", { before: false, after: true }],
     "no-this-before-super":   "error",
     "object-shorthand":       ["error", "never"],
-    "prefer-const":           "error",
 
     "no-bitwise": "error",
     semi:         ["error", "always"],

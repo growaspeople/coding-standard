@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-growaspeople",
-  "version": "2016.10.2",
+  "version": "2016.12.27",
   "description": "ESLint configuration for GrowAsPeople projects",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "git@github.com:growaspeople/eslint-config-growaspeople.git"
   },
   "author": {
-    "name" : "Jumpei Ogawa",
-    "email" : "ogawa@growaspeople.org"
+    "name": "Jumpei Ogawa",
+    "email": "ogawa@growaspeople.org"
   },
   "keywords": [
     "eslint",
@@ -21,10 +21,16 @@
     "url": "https://github.com/growaspeople/eslint-config-growaspeople/issues"
   },
   "homepage": "https://github.com/growaspeople/eslint-config-growaspeople",
+  "dependencies": {
+    "eslint-plugin-promise": "3.x"
+  },
   "peerDependencies": {
     "eslint": ">=3.x"
   },
   "engines": {
     "node": ">=4.x"
+  },
+  "devDependencies": {
+    "eslint": "3.x"
   }
 }
