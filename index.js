@@ -60,7 +60,6 @@ module.exports = {
 
     // Promise (eslint-plugin-promise)
     "promise/always-return":          "error",
-    "promise/avoid-new":              "warn", // Not understanding behavior of this rule well. Need review later.
     "promise/catch-or-return":        "error",
     "promise/no-callback-in-promise": "warn", // Not understanding behavior of this rule well. Need review later.
     "promise/no-promise-in-callback": "warn", // Not understanding behavior of this rule well. Need review later.
@@ -120,6 +119,7 @@ module.exports = {
     "no-mixed-requires": "off",
 
     // Promise (eslint-plugin-promise)
+    "promise/avoid-new":  "off", // We don't force to use pify or similar libraries when you need to use legacy callback functions
     "promise/no-native":  "off", // Promise is not always declared in the same file (e.g. core.js on frontend)
     "promise/no-nesting": "off", // Sometimes nested promise is required
 
