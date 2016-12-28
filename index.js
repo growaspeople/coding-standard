@@ -9,7 +9,9 @@ module.exports = {
   globals: {
     fetch: true
   },
-
+  plugins: [
+    "promise"
+  ],
   rules: {
     //
     // Necessary rules
@@ -56,6 +58,15 @@ module.exports = {
     "no-var": "error",
     "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
 
+    // Promise (eslint-plugin-promise)
+    "promise/always-return":          "error",
+    "promise/avoid-new":              "warn", // Not understanding behavior of this rule well. Need review later.
+    "promise/catch-or-return":        "error",
+    "promise/no-callback-in-promise": "warn", // Not understanding behavior of this rule well. Need review later.
+    "promise/no-promise-in-callback": "warn", // Not understanding behavior of this rule well. Need review later.
+    "promise/no-return-wrap":         "error", // Not understanding behavior of this rule well. Need review later.
+    "promise/param-names":            "error",
+
     //
     // etc.
     // These rules also affect product quality when violated, but by some reason, they are not configured "error" but "warn".
@@ -79,7 +90,7 @@ module.exports = {
 
     // It shouldn't so strictly benned, although it is not preferrable
     "no-warning-comments": "warn",
-    
+
     // Stylistic Issues
     
     // There are some libraries which doesn't follow the rules of new-cap.
@@ -107,6 +118,10 @@ module.exports = {
 
     // Node.js and CommonJS
     "no-mixed-requires": "off",
+
+    // Promise (eslint-plugin-promise)
+    "promise/no-native":  "off", // Promise is not always declared in the same file (e.g. core.js on frontend)
+    "promise/no-nesting": "off", // Sometimes nested promise is required
 
     //
     // Stylistic rules

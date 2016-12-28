@@ -21,6 +21,9 @@
     "url": "https://github.com/growaspeople/eslint-config-growaspeople/issues"
   },
   "homepage": "https://github.com/growaspeople/eslint-config-growaspeople",
+  "dependencies": {
+    "eslint-plugin-promise": "3.x"
+  },
   "peerDependencies": {
     "eslint": ">=3.x"
   },
