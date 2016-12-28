@@ -8,8 +8,8 @@
     "url": "git@github.com:growaspeople/eslint-config-growaspeople.git"
   },
   "author": {
-    "name" : "Jumpei Ogawa",
-    "email" : "ogawa@growaspeople.org"
+    "name": "Jumpei Ogawa",
+    "email": "ogawa@growaspeople.org"
   },
   "keywords": [
     "eslint",

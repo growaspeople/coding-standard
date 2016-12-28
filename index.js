@@ -55,7 +55,7 @@ module.exports = {
     "no-undefined": "error",
 
     // ECMAScript 6
-    "no-var": "error",
+    "no-var":       "error",
     "prefer-const": ["error", { ignoreReadBeforeAssign: true }],
 
     // Promise (eslint-plugin-promise)
@@ -92,10 +92,10 @@ module.exports = {
     "no-warning-comments": "warn",
 
     // Stylistic Issues
-    
+
     // There are some libraries which doesn't follow the rules of new-cap.
     // You can add exception here, but it reduce productivity to add everytime.
-    "new-cap": ["warn", { "capIsNewExceptions": ["Polymer"] }],
+    "new-cap": ["warn", { capIsNewExceptions: ["Polymer"]}],
 
     //
     // Disabled rules
